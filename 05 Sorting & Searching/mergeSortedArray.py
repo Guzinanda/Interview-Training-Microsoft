@@ -1,4 +1,3 @@
-# Logic ....................................................................................
 
 # 1. Create list where I am going to be putting my numbers (mergeArray)
 # 2. Iterate nums1 appending the first m numbers to the list mergeArray
@@ -20,7 +19,7 @@ def merge(nums1, m, nums2, n):
     return sorted(mergedArray)
 
 
-# Tests ....................................................................................
+# TEST ____________________________________________________________________________________
 
 nums1 = [1,2,3,0,0,0]
 nums2 = [2,5,6]
@@ -28,7 +27,6 @@ m = 3
 n = 3
 
 print(merge(nums1, m, nums2, n))
-
 
 
 '''

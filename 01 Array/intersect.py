@@ -11,8 +11,8 @@ Intersection of Two Arrays II
 
   Dictionaries allow me to store information based in a key (reference).
 
-  01. I need to create a Dictionary that indicates me how many nums nums1 have.
-      This is done by iterating nums1 to store the data in dict1:
+  01. I need to create a Dictionary that indicates me how many numbers nums1 have.
+      This is done by iterating nums1 to store the data in the dictionary dict1:
       nums1 = [4,4,9,5]
       dict1 = [4:2, 9:1, 5:1]
 

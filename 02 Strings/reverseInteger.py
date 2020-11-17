@@ -24,9 +24,8 @@ Reverse Integer
      04. Iterate for 0 at the beggining deleting them:    x = [0,0,2,1]   ->  x = [2,1]  
      04. Insert the '-' the the beggining:                x = [2,1]       ->  x = [-,2,1] 
      06. Join it                                          x = [-,2,1]     ->  x = -21  
-
-
 '''
+
 
 def reverseInteger(x):
 

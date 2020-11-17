@@ -5,7 +5,7 @@ Single Number
    Given a non-empty array of integers, every element appears twice except one. 
    Find that single one.
 
-@  Example:
+   Example:
    Input: [2,2,1]
    Output: 1
 

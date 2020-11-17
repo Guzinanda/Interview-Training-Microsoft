@@ -1,10 +1,29 @@
-# Clean the string: Lowercase everything, eliminate special characters and spaces.
+'''
+Valid Palindrome
 
-# Compare: Compare the first character (index[0]) with the last character (indext[-1]).
+@   What I have to do?
+    Given a string, determine if it is a palindrome, considering only alphanumeric characters 
+	and ignoring cases.
 
-# Two cases:
-# - Pair: Compare s/2 times.
-# - Odd: Compare (s - 1) times.
+    Example 01:
+	Input: "A man, a plan, a canal: Panama"
+	Output: true
+
+    Example 02:
+	Input: "race a car"
+	Output: false
+
+
+@   How I am going to do it?
+
+	01. Clean the string: Lowercase everything, eliminate special characters and spaces.
+	02. Compare: Compare the first character (index[0]) with the last character (indext[-1]).
+
+	    Two cases:
+	    - Pair: Compare s/2 times.
+	    - Odd: Compare (s - 1) times.
+'''
+
 
 import re
 
@@ -44,6 +63,7 @@ def isPalindrome(s):
 		return True
 
 
+
 # TEST ____________________________________________________________________________________
 
 s1 = "A man, a plan, a canal: Panama"		# True
@@ -51,23 +71,3 @@ s2 = "race a car"         			 		# False
 
 print(isPalindrome(s1))
 print(isPalindrome(s2))
-
-'''
-@   # 05
-
-@   Instructions:
-    Given a string, determine if it is a palindrome, considering only alphanumeric characters 
-	and ignoring cases.
-
-@   Example 01:
-	Input: "A man, a plan, a canal: Panama"
-	Output: true
-
-@   Example 02:
-	Input: "race a car"
-	Output: false
-
-
-@   Link:
-    https://leetcode.com/explore/interview/card/top-interview-questions-easy/127/strings/883/
-'''

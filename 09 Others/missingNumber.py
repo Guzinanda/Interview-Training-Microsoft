@@ -6,7 +6,7 @@ Missing Number
 
 @ Who I am going to do it?
 
-  Summation Formula:
+  With the "Summation Formula":
 
   01. The length of the array is:                   l =  len(nums)
                                                     l =  3
@@ -27,9 +27,7 @@ l * (l+1)/2  its going to make a sume of all sequential numbers till 'l' : 1+2+3
 
 
 def missingNumber(nums):
-    
-    n = len(nums)  # 3
-    
+    n = len(nums)
     return n * (n+1) / 2 - sum(nums)
 
 

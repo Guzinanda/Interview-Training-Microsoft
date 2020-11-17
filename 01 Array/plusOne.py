@@ -2,11 +2,22 @@
 Plus One
 
 @ What I have to do?
-  Given an array of digits, increment on to the integer.
+  Given an array of digits, increment one to the last integer.
 
 @ How I an going to do it?
-  
+  There are 3 possibilities:
+
+  01. When the digit is == 9 and whe have an addend:
+      It will set the digit place to 0 and keep the addend
+
+  02. When the digit is < than 9 and we have an addend:
+      It will add 1 to the digit in place and substract that 1 from addend
+
+  03. When the first digit is 9 and we still have and acumulated addend:
+      It will verify if the last number is a 0 and if the addend still has
+      a 1, in that case add a 1 to the beggining. 
 '''
+
 
 def plusOne(digits):
     
@@ -26,7 +37,7 @@ def plusOne(digits):
             digits[index] += 1
             addend -= 1
         
-        # digits=[9,0,0] and addend=1 -> digits=[1,0,0,0] 
+        # digits=[9,9,9] and addend=1 -> digits=[1,0,0,0] 
         if (index == 0 and addend == 1):
             digits.insert(0, 1)
         
@@ -36,7 +47,7 @@ def plusOne(digits):
 
 
 
-# TEST _____________________________________________________________________
+# TEST ______________________________________________________________________________
 
 digits1 = [1,3,9] # [1,4,0]
 digits2 = [0,9,9] # [1,0,0]

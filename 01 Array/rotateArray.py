@@ -1,6 +1,14 @@
-   
-    # I want to move the last item of the list (index[-1]) in front of the list (index[0])
-    # This will be repeated "k" times
+'''
+Rotate an Array
+
+@  What I have to do?
+   Given an array of integers, and a 'k' number indicating the number of times
+   the arrays must be rotated, totate that number to the right.
+
+@  How I am going to do it?
+   I want to move the last item of the list (index[-1]) in front of the list (index[0])
+   This will be repeated "k" times
+'''
 
 def rotateArray(nums, k):
     while k > 0:
@@ -24,13 +32,6 @@ print(rotateArray(nums2, k2))
 
 
 '''
-@   # 03
-
-@   Instructions:
-    Given an array of integers, find if the array contains any duplicates.
-    Return true if any value appears at least twice in the array, and it 
-    should return false if every element is distinct.
-
 @   Example 01:
     Input:  nums = [1,2,3,4,5,6,7], k = 3
     Output: [5,6,7,1,2,3,4]
@@ -48,7 +49,4 @@ print(rotateArray(nums2, k2))
     rotate 1 steps to the right: [7,1,2,3,4,5,6]
     rotate 2 steps to the right: [6,7,1,2,3,4,5]
     rotate 3 steps to the right: [5,6,7,1,2,3,4]
-
-@   Link:
-    https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/646/
 '''

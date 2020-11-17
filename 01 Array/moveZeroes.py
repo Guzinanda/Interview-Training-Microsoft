@@ -10,6 +10,7 @@ Move Zeroes
   03. Remove() all '*'
 '''
 
+
 def moveZeroes(nums):
 
     for i in range(len(nums)):
@@ -23,7 +24,7 @@ def moveZeroes(nums):
     return nums
 
 
-# TEST _________________________________________________________________
+# TEST ______________________________________________________________________________
 
 nums1 = [0,1,0,3,12]  #[1,3,12,0,0]
 print(moveZeroes(nums1))

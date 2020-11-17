@@ -1,14 +1,32 @@
+'''
+Two Sum
+
+@  What I have to do?
+   Given an array of integers 'nums' and an integer 'target', return indices 
+   of the two numbers such that they add up to target.
+
+@  How I am going to do it?
+'''
+
 
 def twoSum(nums, target):
     
+    #nums = [2,7,11,15]
+    #target = 9
+
+    #d= {2:0} 
     d = {}
     
+    #   1  7
     for i, num in enumerate(nums):
-        
-        if target-num in d:
-            return d[target-num], i
+
+        #   9        7
+        if (target - num) in d:
+            #        9        7     1
+            return d[target - num], i
         
         d[num] = i
+
 
 
 # TEST ____________________________________________________________________________________

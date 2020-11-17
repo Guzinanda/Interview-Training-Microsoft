@@ -17,6 +17,7 @@ Missing Number
                                                     s =  4 * (4+1)/2
                                                     s =  10
 
+
   03. Subtract from the sum of first n natural      r =  s - sum(nums)
       numbers, it will be the value of the          r =  10 - 8
       missing element whitch is:                    r =  2 

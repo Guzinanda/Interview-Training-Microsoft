@@ -1,3 +1,19 @@
+'''
+Valid Anagram
+
+@   What I have to do?
+    Given two strings s and t , write a function to determine if t is an anagram of s.
+
+@   Example 01:
+    Input:  s = "anagram", t = "nagaram"
+    Output: true
+
+@   Example 02:
+    Input:  s = "rat", t = "car"
+    Output: false
+'''
+
+
 def validAnagram(s,t):
 	
 	word1 = createDictionary(s)
@@ -22,7 +38,6 @@ def createDictionary(word):
 
 
 
-
 # TEST ____________________________________________________________________________________
 
 s1 = "anagram"      # True
@@ -33,23 +48,3 @@ t2 = "car"
 
 print(validAnagram(s1, t1))
 print(validAnagram(s2, t2))
-
-
-'''
-@   # 04
-
-@   Instructions:
-    Given two strings s and t , write a function to determine if t is an anagram of s.
-
-@   Example 01:
-    Input:  s = "anagram", t = "nagaram"
-    Output: true
-
-@   Example 02:
-    Input:  s = "rat", t = "car"
-    Output: false
-
-
-@   Link:
-    https://leetcode.com/explore/interview/card/top-interview-questions-easy/127/strings/882/
-'''

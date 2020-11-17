@@ -12,9 +12,8 @@ Remove Duplicates
    Your function should return length = 5, 
 
 @  How I am going to do it:
-   
-
 '''
+
 
 def removeDuplicates(nums):
 

@@ -27,9 +27,9 @@ Notes:  A permutation is a possible order of elements of a set (conjunto), this
            ___
 
         - Take the range of characters and create a collections.Counter() of it.
-        - Compare if collections.Counter(s1) == collections.Counter(s2[pi:pf])
-        
+        - Compare if collections.Counter(s1) == collections.Counter(s2[pi:pf])        
 '''
+
 
 import collections
 
@@ -57,7 +57,6 @@ def checkInclusion(s1,s2):
         pf += 1
     
     
-
 # TEST ____________________________________________________________________________________
 
 s1 = "abd"

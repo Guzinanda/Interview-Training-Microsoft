@@ -10,6 +10,7 @@ Rotate an Array
    This will be repeated "k" times
 '''
 
+
 def rotateArray(nums, k):
     while k > 0:
         last_item = nums.pop(-1)
@@ -17,6 +18,7 @@ def rotateArray(nums, k):
         k -= 1
 
     return nums
+
 
 
 # TEST ____________________________________________________________________________________

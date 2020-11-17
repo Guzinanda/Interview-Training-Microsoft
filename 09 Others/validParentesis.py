@@ -8,7 +8,6 @@ def isValid(s):
     stack = []
 
     for i in s:
-
         if i in open_bracket:
             stack.append(i)
         elif stack and i == bracket_map[stack[-1]]:

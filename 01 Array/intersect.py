@@ -11,7 +11,7 @@ Intersection of Two Arrays II
 
   Dictionaries allow me to store information based in a key (reference).
 
-  01. I need to create a Dictionary that idnicates me how many nums are there.
+  01. I need to create a Dictionary that indicates me how many nums nums1 have.
       This is done by iterating nums1 to store the data in dict1:
       nums1 = [4,4,9,5]
       dict1 = [4:2, 9:1, 5:1]
@@ -44,6 +44,7 @@ def intersect(nums1, nums2):
             dict1[i] -= 1
     
     return ret
+
 
 
 # TEST ______________________________________________________________________________

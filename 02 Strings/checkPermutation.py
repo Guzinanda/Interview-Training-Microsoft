@@ -67,6 +67,3 @@ print(checkInclusion(s1,s2)) # True
 s1 = "abd"
 s2 = "eidaaooo"
 print(checkInclusion(s1,s2)) # False
-
-
-

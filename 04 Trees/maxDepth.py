@@ -1,5 +1,13 @@
 '''
-Logic:
+@   Maximum Depth of Binary Tree
+ 
+@   Instructions:
+    Given a binary tree, find its maximum depth.
+    The maximum depth is the number of nodes along the longest path from the root node 
+    down to the farthest leaf node. Note: A leaf is a node with no children.
+
+@   Example 01:
+    Input: [3,9,20,null,null,15,7]
 
         3
       /   \ 
@@ -7,25 +15,19 @@ Logic:
           / \ 
         15    7
 
-
-root = [3 , 9 , 20 , null , null , 15 , 7]
-        _   ______   ____________________
-
-Levels:     log2(7)     = 2.8
-            floor(2.8)  = 2
-            2 + 1       = 3
-
+@   Link:
+    https://leetcode.com/explore/interview/card/top-interview-questions-easy/94/trees/555/
 '''
-null = None
-import math
 
-def maxDepth(root):
-    levels = math.floor(math.log(len(root), 2) + 1)
-    return levels
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
 
-
-# TEST ____________________________________________________________________________________
-
-root = [3, 9, 20, None, None, 15, 7]
-
-print(maxDepth(root))
+class Solution(object):
+    def maxDepth(self, root):
+        if root == None:
+            return 0
+        return max(self.maxDepth(root.left), self.maxDepth(root.right)) + 1

@@ -19,6 +19,7 @@
     https://leetcode.com/explore/interview/card/top-interview-questions-easy/94/trees/555/
 '''
 
+
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, val=0, left=None, right=None):
@@ -28,6 +29,10 @@
 
 class Solution(object):
     def maxDepth(self, root):
+        """
+        :type root: TreeNode
+        :rtype: bool
+        """
         if root == None:
             return 0
         return max(self.maxDepth(root.left), self.maxDepth(root.right)) + 1

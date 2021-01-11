@@ -29,25 +29,3 @@ def maxDepth(root):
 root = [3, 9, 20, None, None, 15, 7]
 
 print(maxDepth(root))
-
-
-'''
-@   # 01
-
-@   Instructions:
-    Given a binary tree, find its maximum depth.
-    The maximum depth is the number of nodes along the longest path from the root node 
-    down to the farthest leaf node. Note: A leaf is a node with no children.
-
-@   Example 01:
-    Input: [3,9,20,null,null,15,7]
-
-        3
-      /   \ 
-     9    20 
-          / \ 
-        15    7
-
-@   Link:
-    https://leetcode.com/explore/interview/card/top-interview-questions-easy/94/trees/555/
-'''

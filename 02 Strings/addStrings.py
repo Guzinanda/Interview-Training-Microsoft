@@ -1,31 +1,18 @@
 '''
-Plus Any
+Add Strings
 
-@   Problem
-    Given two arrays of digits add them.
+@ Problem Link
+  https://leetcode.com/problems/add-strings/
     
-    aU  =   123 
-    aD  =  4567
-          ------ +
-    sum =  4690
-
-@   How I am going to do it?
-
-    01. Prepare strings:
-        I want to know the length of the two strings: len(aU) = 3 and len(aD) = 4
-        Know with one is the greatest, know the difference and add the '0' equivalent:
-        if len(aU) > len(aD):
-            difference = len(aU) - len(aD)
-            while difference > 0:
-                aD.insert(0, 0)
-
-        if len(aU) < len(aD):
-            difference = len(aD) - len(aU)
-            while difference > 0:
-                aU.insert(0, 0)
+@ Problem
+  Given two arrays of digits add them.
+    
+  aU  =   123 
+  aD  =  4567
+        ------ +
+  sum =  4690
 
 '''
-
 
 def addStrings(num1: str, num2: str) -> str:
     

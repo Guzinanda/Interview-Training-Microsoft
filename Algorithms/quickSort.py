@@ -4,14 +4,17 @@
 @ Problem
   Given an unsorted integer array nums of n elements, write a function to Quick Sort nums.
 
-@ Example 01:
+@ Example
   Input: nums = [10, 5, 2, 3]
   Output: nums = [2, 3, 5, 10]
 
-@ Notes
+@ Template
+  01. Arrays of just one element are already sorted, so return the array if is just one element.
+  02. We need a pivot, for example the first number in the array.
+  03. Tow lists, one with all the nums less than the pivor and another with all the greatest nums.
+  04. Return the recution of that algorithm in this order less + pivot + grater
 
 '''
-
 
 def quickSort(array):
 

@@ -9,8 +9,8 @@
      9    20 
           / \ 
         15    7
-'''
 
+'''
 
 # Definition for a binary tree node.
 # class TreeNode(object):
@@ -21,10 +21,20 @@
 
 class Solution(object):
     
-    # TREE TRAVERSAL
-    
-    # In order:Izquierda -> Yo -> Derecha
     def maxDepth(self, root):
+
+        # Pre Order:Izquierda -> Derecha -> Yo
+        def preOrder(root):
+            if root == None:
+                return
+            print(root.val)
+            preOrder(root.left)
+            preOrder(root.right)
+        preOrder(root)
+
+        print("\n")
+
+        # In order:Izquierda -> Yo -> Derecha
         def inOrder(root):
             if root == None:
                 return
@@ -32,25 +42,14 @@ class Solution(object):
             print(root.val)
             inOrder(root.right)
         inOrder(root)
-        
+
         print("\n")
-        
-    # Pre Order:Izquierda -> Derecha -> Yo
-        def preOrder(root):
-            if root == None:
-                return
-            preOrder(root.left)
-            preOrder(root.right)
-            print(root.val)
-        preOrder(root)
-        
-        print("\n")
-            
-    # Post Order: Yo -> Izquierda -> Derecha
+
+        # Post Order: Yo -> Izquierda -> Derecha
         def postOrder(root):
             if root == None:
                 return
-            print(root.val)
             postOrder(root.left)
             postOrder(root.right)
+            print(root.val)
         postOrder(root)

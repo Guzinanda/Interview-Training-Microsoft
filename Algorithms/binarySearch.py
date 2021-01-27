@@ -12,7 +12,6 @@
   Post-Processing: Determine viable candidates remaning space.
 
 
-
 What I want to do?
 
 01:  I want to know if nums is not empty, if if is empty return -1

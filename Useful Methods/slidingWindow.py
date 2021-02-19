@@ -28,11 +28,8 @@ def sliding_window(win,arr):
     return list_of_num
     
 
-
 # TEST ____________________________________________________________________________________
 
 win = 2
 arr = [1,2,3,4,5,6]
 print(sliding_window(win,arr))
-
-

@@ -1,11 +1,11 @@
 '''
 Valid Palindrome
 
-@   What I have to do?
+@	Problem
     Given a string, determine if it is a palindrome, considering only alphanumeric characters 
 	and ignoring cases.
 
-    Example 01:
+@   Example 01:
 	Input: "A man, a plan, a canal: Panama"
 	Output: true
 
@@ -13,8 +13,7 @@ Valid Palindrome
 	Input: "race a car"
 	Output: false
 
-
-@   How I am going to do it?
+@   Template
 
 	01. Clean the string: Lowercase everything, eliminate special characters and spaces.
 	02. Compare: Compare the first character (index[0]) with the last character (indext[-1]).
@@ -22,8 +21,8 @@ Valid Palindrome
 	    Two cases:
 	    - Pair: Compare s/2 times.
 	    - Odd: Compare (s - 1) times.
-'''
 
+'''
 
 import re
 

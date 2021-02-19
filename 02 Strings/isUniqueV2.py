@@ -1,21 +1,18 @@
 '''
 Is Unique
 
-@  What I have to do?
-   Is Unique: Implement an algorithm to determine if a string has all unique characters.
-   What if you cannot use additional data structures?
+@   Problem
+    Implement an algorithm to determine if a string has all unique characters.
+    What if you cannot use additional data structures?
 
-@  Questions:
-   * The string is an ASCII or a Unicode string?
-     Character encodings (standards) to represent characters in binary. 
-     The difference is the way they encode and the number of bits that each character use.
+@   Template
+    The string is an ASCII or a Unicode string?
+    Character encodings (standards) to represent characters in binary. 
+    The difference is the way they encode and the number of bits that each character use.
      - Unicode: 32-bit, 16-bit and 8-bit (is standardized and supports more languages)
      - ASCII: 8-bits (No accent marks (á) and umlaut (ü), no primes (~)(')(¸)(´))
 
-@  What I going to do?
-   01. I want to clean the word, making all lower cases, eliminate spaces.
 '''
-
 
 def cleanString(st):
 #* Cleans "st" by make it lowercase and eliminating blank spaces

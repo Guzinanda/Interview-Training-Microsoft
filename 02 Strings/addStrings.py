@@ -40,7 +40,12 @@ def addStrings(num1: str, num2: str) -> str:
 
 # TEST ______________________________________________________________________________
 
+# Example 01:
 num1 = "123"
 num2 = "4567"
-
 print(addStrings(num1, num2)) # 4690
+
+# Example 02:
+num1 = "139"
+num2 = "1"
+print(addStrings(num1, num2)) # 140

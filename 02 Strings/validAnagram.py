@@ -1,18 +1,18 @@
 '''
 Valid Anagram
 
-@   What I have to do?
+@   Problem
     Given two strings s and t , write a function to determine if t is an anagram of s.
 
-@   Example 01:
+@   Example 01
     Input:  s = "anagram", t = "nagaram"
     Output: true
 
-@   Example 02:
+    Example 02
     Input:  s = "rat", t = "car"
     Output: false
-'''
 
+'''
 
 def validAnagram(s,t):
 	
@@ -24,7 +24,6 @@ def validAnagram(s,t):
 	else:
 		return False
 
-		
 def createDictionary(word):
 	
 	dict = {}

@@ -1,11 +1,14 @@
 '''
 Two Sum
 
-@  What I have to do?
-   Given an array of integers 'nums' and an integer 'target', return indices 
-   of the two numbers such that they add up to target.
+@   Problem
+    Given an array of integers 'nums' and an integer 'target', return indices 
+    of the two numbers such that they add up to target.
 
-@  How I am going to do it?
+@   Example:
+    Input: nums = [2,7,11,15], target = 9
+    Output: [0,1]
+
 '''
     
 def twoSum(nums, target):

@@ -1,31 +1,31 @@
 '''
 Reverse Integer
 
-@ What I have to do?
-  Given an integer, reverse the digits of that integer.
+@   Problem
+    Given an integer, reverse the digits of that integer.
 
-@ How I am going to do it?
+@   Template
   
-  There are two cases: When it's 0, when it's potivie(+) and when negative(-).
+    There are two cases: When it's 0, when it's potivie(+) and when negative(-).
 
-  0. When it is 0:
-     01. Just return '0'
+    0. When it is 0:
+      01. Just return '0'
 
-  0. When it is potive(+)
-     01. Separate the integers in an array:               x = 1200        ->  x = [1,2,0,0]
-     02. Rotate the positions:                            x = [1,2,0,0]   ->  x = [0,0,2,1]  
-     03. Iterate for 0 at the beggining deleting them:    x = [0,0,2,1]   ->  x = [2,1]  
-     04. Join it                                          x = [2,1]       ->  x = 21  
+    0. When it is potive(+)
+      01. Separate the integers in an array:               x = 1200        ->  x = [1,2,0,0]
+      02. Rotate the positions:                            x = [1,2,0,0]   ->  x = [0,0,2,1]  
+      03. Iterate for 0 at the beggining deleting them:    x = [0,0,2,1]   ->  x = [2,1]  
+      04. Join it                                          x = [2,1]       ->  x = 21  
 
-  0. When it is negative(-):
-     01. Separate the integers in an array:               x = -1200       ->  x = [-,1,2,0,0]
-     02. Pop() the fisrt character                        x = [-,1,2,0,0] ->  x = [1,2,0,0]
-     03. Rotate the positions:                            x = [1,2,0,0]   ->  x = [0,0,2,1]  
-     04. Iterate for 0 at the beggining deleting them:    x = [0,0,2,1]   ->  x = [2,1]  
-     04. Insert the '-' the the beggining:                x = [2,1]       ->  x = [-,2,1] 
-     06. Join it                                          x = [-,2,1]     ->  x = -21  
+    0. When it is negative(-):
+      01. Separate the integers in an array:               x = -1200       ->  x = [-,1,2,0,0]
+      02. Pop() the fisrt character                        x = [-,1,2,0,0] ->  x = [1,2,0,0]
+      03. Rotate the positions:                            x = [1,2,0,0]   ->  x = [0,0,2,1]  
+      04. Iterate for 0 at the beggining deleting them:    x = [0,0,2,1]   ->  x = [2,1]  
+      04. Insert the '-' the the beggining:                x = [2,1]       ->  x = [-,2,1] 
+      06. Join it                                          x = [-,2,1]     ->  x = -21  
+
 '''
-
 
 def reverseInteger(x):
 
@@ -81,7 +81,6 @@ def reverseInteger(x):
         x = ''.join(x)
 
     return x
-
 
 
 # TEST _____________________________________________________________

@@ -1,26 +1,23 @@
 '''
 Remove Duplicates
 
-@  What I have to do?
-   Remove Duplicates from Sorted Array
-   Given a sorted array nums, remove the duplicates in-place such that each element appear 
-   only once and return the new length. Do not allocate extra space for another array, you 
-   must do this by modifying the input array in-place with O(1) extra memory.
+@   Problem
+    Given a sorted array nums, remove the duplicates in-place such that each element appear 
+    only once and return the new length. Do not allocate extra space for another array, you 
+    must do this by modifying the input array in-place with O(1) extra memory.
 
-@  Example:
-   Given nums = [0,0,1,1,1,2,2,3,3,4],
-   Your function should return length = 5, 
+@   Example
+    Input: nums = [0,0,1,1,1,2,2,3,3,4]
+    Output: 5, nums = [0,1,2,3,4]
 
-@  How I am going to do it:
 '''
-
 
 def removeDuplicates(nums):
 
     i = 0
 
-    while i < len(nums)-1:
-        if nums[i] == nums[i+1]:
+    while i < len(nums) - 1:
+        if nums[i] == nums[i + 1]:
             del nums[i]
         else:
             i += 1
@@ -28,11 +25,10 @@ def removeDuplicates(nums):
     return len(nums)
 
 
-
 # TEST ____________________________________________________________________________________
 
-nums1 = [1,1,2]                 #* [1,2]
-nums2 = [0,0,1,1,1,2,2,3,3,4]   #* [0,1,2,3,4]
+nums1 = [1,1,2]                     # [1,2]
+nums2 = [0,0,1,1,1,2,2,3,3,4]       # [0,1,2,3,4]
 
 print(removeDuplicates(nums1))
 print(removeDuplicates(nums2))

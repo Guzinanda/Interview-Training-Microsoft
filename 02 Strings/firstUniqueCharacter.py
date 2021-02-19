@@ -1,29 +1,28 @@
 '''
 First Unique Character
 
-@   What I have to do?
+@   Problem
     Given a string, find the first non-repeating character in it and return its index. 
     If it doesn't exist, return -1.
 
-    Example 01:
+@   Example 01
     Input:  s = "leetcode"
     Output: 0
 
-    Example 02:
+    Example 02
     Input:  s = "loveleetcode"
     Output: 2
 
-    Example 03:
+    Example 03
     Input:  s = "momo"
     Output: -1
 
-@   How I am going to do it?
+@   Template
+    I want to take the character in place and Pop in to compare:
+    - If there is no other, return its position (index).
+    - If there is another one, insert it back in its position (index).
 
-    01. I want to take the character in place and Pop in to compare:
-        - If there is no other, return its position (index).
-        - If there is another one, insert it back in its position (index).
 '''
-
 
 def firstUniqueCharacter(s):
     
